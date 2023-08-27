@@ -1,0 +1,167 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-image: linear-gradient(to right, #3498db, #2ecc71);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Style the navigation bar buttons */
+.navbar-button {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-button:hover {
+    color: #d4eaff;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('static/images/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('static/images/background-image.jpg');
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    background-image: linear-gradient(to right, #3498db, #2ecc71);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.button:hover {
+    background-image: linear-gradient(to right, #2980b9, #27ae60);
+}
+
+/* Style the prediction process section */
+.prediction-process {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.prediction-process h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    width: 30%;
+}
+
+.step-number {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.step-description {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style the user dashboard section 
+.user-dashboard {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.user-dashboard h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.predictions {
+    /* Style user predictions here 
+}
+
+.prediction {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: center;
+}
+
+/* Other styles for predictions if needed */
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-media a:hover {
+    color: #d4eaff;
+}

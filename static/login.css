@@ -1,0 +1,95 @@
+/* Add some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(52, 152, 219, 0.7);
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the login form vertically and horizontally */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Style the login form column */
+.column {
+    background-color: rgba(241, 210, 117, 0.7); /* Transparent blue background */
+    width: 100%;
+    max-width: 450px; /* Increased max-width */
+    padding: 20px;
+    border-radius: 8px;
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 2px solid transparent; /* Initial border (transparent) */
+    transition: border-color 0.3s; /* Add transition effect to border-color */
+}
+
+/* Style the form headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style labels and input fields */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the registration link */
+a {
+    color: #e8ecef;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.bottm_button{
+    display: flex;
+}
+#bt{
+    background-color: #007bff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}

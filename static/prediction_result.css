@@ -1,0 +1,96 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the prediction result page */
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+}
+
+.container {
+    width: 70%;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Style the prediction result text */
+.prediction-line {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.prediction-text {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* Style suggestions */
+.suggestions {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20pxx;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+/* ... (previous CSS code) ... */
+
+/* Style the "Back to Dashboard" button */
+.button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Style the "Back to Dashboard" button specifically for the prediction result page */
+.container .button {
+    margin-top: 40px; /* Add margin to separate it from suggestions */
+}
+

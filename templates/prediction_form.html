@@ -1,0 +1,49 @@
+<head>
+    <title>Enter Your Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prediction_form.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Diabetes Toolkit</h1>
+        </div>
+        <div class="navbar-buttons">
+            <a href="{{ url_for('index') }}" class="navbar-button">Home</a>
+            <a href="{{ url_for('prediction') }}" class="navbar-button">Diabetes Prediction</a>
+            <a href="{{ url_for('prevention') }}" class="navbar-button">Diabetes Prevention</a>
+            <a href="{{ url_for('medications') }}" class="navbar-button">Diabetes Medication</a>
+            <a href="{{ url_for('logout') }}" class="navbar-button">Logout</a>
+            <a href="{{ url_for('contact') }}" class="navbar-button">Contact Us</a>
+        </div>
+    </nav>
+    <form action="{{ url_for('prediction') }}" method="post">
+        <h1>Enter Your Details</h1>
+        
+        <label for="feature_0">Pregnancies:</label>
+        <input type="number" name="feature_0" required><br>
+
+        <label for="feature_1">Glucose:</label>
+        <input type="number" name="feature_1" required><br>
+
+        <label for="feature_2">Blood Pressure:</label>
+        <input type="number" name="feature_2" required><br>
+
+        <label for="feature_3">Skin Thickness:</label>
+        <input type="number" name="feature_3" required><br>
+
+        <label for="feature_4">Insulin:</label>
+        <input type="number" name="feature_4" required><br>
+
+        <label for="feature_5">BMI:</label>
+        <input type="number" name="feature_5" step="any" required><br>
+
+        <label for="feature_6">Diabetes Pedigree Function:</label>
+        <input type="number" name="feature_6" step="any" required><br>
+
+        <label for="feature_7">Age:</label>
+        <input type="number" name="feature_7" required ><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+

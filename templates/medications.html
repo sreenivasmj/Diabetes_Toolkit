@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Medications</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='medications.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Diabetes Toolkit</h1>
+        </div>
+        <div class="navbar-buttons">
+            <a href="{{ url_for('index') }}" class="navbar-button">Home</a>
+            <a href="{{ url_for('prevention') }}" class="navbar-button">Diabetes Prevention</a>
+            <a href="{{ url_for('prediction') }}" class="navbar-button">Diabetes Prediction</a>
+            <a href="{{ url_for('medications') }}" class="navbar-button">Diabetes Medications</a>
+            <a href="{{ url_for('logout') }}" class="navbar-button">Logout</a>
+            <a href="{{ url_for('contact') }}" class="navbar-button">Contact Us</a>
+        </div>
+    </nav>
+    
+    <div class="page">
+        <div class="container">
+            <h1>Diabetes Medications</h1>
+            <p>Managing diabetes involves both medications and healthy lifestyle choices. Here are some recommendations:</p>
+            
+            <h2>Medications</h2>
+            <ul>
+                <li>Insulin injections</li>
+                <li>Oral medications</li>
+                <li>Other prescribed medications</li>
+            </ul>
+            
+            <h2>Healthy Habits</h2>
+            <ul>
+                <li>Monitor blood sugar levels regularly</li>
+                <li>Follow a balanced diet</li>
+                <li>Engage in regular physical activity</li>
+                <li>Stay hydrated</li>
+                <li>Get enough sleep</li>
+            </ul>
+            
+            <h2>Regular Check-ups</h2>
+            <ul>
+                <li>Consult your healthcare provider regularly</li>
+                <li>Monitor cholesterol and blood pressure</li>
+                <li>Check kidney function</li>
+                <li>Eye and foot exams</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Diabetes Toolkit. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

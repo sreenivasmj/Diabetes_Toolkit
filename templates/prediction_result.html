@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prediction_result.css') }}">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <h1>Prediction Result</h1>
+            <p class="prediction-line">The prediction result is:</p>
+            <p class="prediction-text">{{ result_text }}</p>
+            <div class="suggestions">
+                {% if result_text == "This Person is Diabetic" %}
+                    <p>Based on the prediction, we suggest you explore diabetes medication options.</p>
+                {% else %}
+                    <p>Based on the prediction, we suggest you focus on diabetes prevention strategies.</p>
+                {% endif %}
+            </div>
+            <a href="{{ url_for('index') }}" class="button">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

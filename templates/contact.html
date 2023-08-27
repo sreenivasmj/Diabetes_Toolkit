@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Developer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Diabetes Toolkit</h1>
+        </div>
+        <div class="navbar-buttons">
+            <a href="{{ url_for('index') }}" class="navbar-button">Home</a>
+            <a href="{{ url_for('prevention') }}" class="navbar-button">Diabetes Prevention</a>
+            <a href="{{ url_for('medications') }}" class="navbar-button">Diabetes Medications</a>
+            <a href="{{ url_for('prediction') }}" class="navbar-button">Diabetes Prediction</a>
+            <a href="{{ url_for('contact') }}" class="navbar-button">Contact</a>
+            <a href="{{ url_for('logout') }}" class="navbar-button">Logout</a>
+        </div>
+    </nav>
+
+    <div class="page">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or feedback, feel free to get in touch!</p>
+            <ul class="contact-details">
+                <li>Email: jhansysreenivasmanchuri@gmail.com</li>
+                <li>Phone: 9959346268</li>
+                <li>Instagram: sreenivas_mj</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
